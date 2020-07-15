@@ -1,24 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R21-8c-ZkM">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="o63-A2-t3W">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="R21-8c-ZkM" customClass="ViewController" customModule="LudoDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q1F-vZ-BzZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hI6-qo-ntm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="yqB-TN-ENT">
+                                <rect key="frame" x="0.0" y="74" width="375" height="684"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Ludo Dice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAX-8v-rQz">
+                                        <rect key="frame" x="123.33333333333333" y="0.0" width="128.33333333333337" height="30"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="y30-yn-L2T">
+                                        <rect key="frame" x="39" y="60" width="297" height="555"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TbD-6Z-PVc">
+                                                <rect key="frame" x="0.0" y="0.0" width="297" height="451"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice2" translatesAutoresizingMaskIntoConstraints="NO" id="H3c-Vt-xJy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="297" height="218"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice5" translatesAutoresizingMaskIntoConstraints="NO" id="HQw-hz-yJI">
+                                                        <rect key="frame" x="0.0" y="233" width="297" height="218"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWs-MO-xmA">
+                                                <rect key="frame" x="74" y="451" width="149" height="104"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="104" id="VO7-nk-R9w"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="130"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhZ-Dt-FHv">
+                                        <rect key="frame" x="140" y="645" width="95" height="39"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="Press Me">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onPressMeBtnClicked:" destination="R21-8c-ZkM" eventType="touchUpInside" id="WjX-6e-hLL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="d8d-qT-br0" firstAttribute="trailing" secondItem="yqB-TN-ENT" secondAttribute="trailing" id="0IU-uw-Nhv"/>
+                            <constraint firstItem="d8d-qT-br0" firstAttribute="bottom" secondItem="yqB-TN-ENT" secondAttribute="bottom" constant="20" id="3Dl-J6-7oL"/>
+                            <constraint firstItem="hI6-qo-ntm" firstAttribute="leading" secondItem="d8d-qT-br0" secondAttribute="leading" id="H3V-yZ-i4N"/>
+                            <constraint firstItem="hI6-qo-ntm" firstAttribute="top" secondItem="Q1F-vZ-BzZ" secondAttribute="top" id="UQv-3e-HfK"/>
+                            <constraint firstAttribute="bottom" secondItem="hI6-qo-ntm" secondAttribute="bottom" id="VoP-mm-W6b"/>
+                            <constraint firstItem="yqB-TN-ENT" firstAttribute="top" secondItem="d8d-qT-br0" secondAttribute="top" constant="30" id="edK-Gn-IwT"/>
+                            <constraint firstItem="yqB-TN-ENT" firstAttribute="leading" secondItem="d8d-qT-br0" secondAttribute="leading" id="eyu-bp-b9s"/>
+                            <constraint firstItem="d8d-qT-br0" firstAttribute="trailing" secondItem="hI6-qo-ntm" secondAttribute="trailing" id="t6I-bG-mKk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d8d-qT-br0"/>
                     </view>
+                    <connections>
+                        <outlet property="diceLowerImgView" destination="HQw-hz-yJI" id="fBf-mT-rBZ"/>
+                        <outlet property="diceUpperImgView" destination="H3c-Vt-xJy" id="lHz-u9-966"/>
+                        <outlet property="pressMeBtn" destination="hhZ-Dt-FHv" id="yRM-k2-VLO"/>
+                        <outlet property="totalLbl" destination="kWs-MO-xmA" id="Jcc-i7-vRZ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gy3-Pu-Asm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1594" y="114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dice2" width="297" height="294"/>
+        <image name="Dice5" width="297" height="294"/>
+        <image name="background" width="667" height="622"/>
+    </resources>
 </document>
